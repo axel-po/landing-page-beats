@@ -1,0 +1,12 @@
+%gradient-color {
+  background: rgb(24, 25, 25);
+  background: linear-gradient(0deg, rgba(24, 25, 25, 1) 27%, rgba(55, 58, 59, 1) 75%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,60 @@
+/* Section Home */
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 12rem 0;
+  position: relative;
+  @media screen and (max-width: 670px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__image {
+    @extend %flex-center;
+    img {
+      position: absolute;
+      top: -24rem;
+      width: 30rem;
+      z-index: -999;
+      @media screen and (max-width: 670px) {
+        width: 25rem;
+        top: -34rem;
+        right: 0;
+      }
+    }
+  }
+
+  &__data {
+    h1 {
+      font-weight: $font-bold;
+      color: $white;
+      font-size: clamp(4rem, 5vw, 6.4rem);
+      //   &::after {
+      //     content: "On ear";
+      //     position: absolute;
+      //     bottom: 30.5rem;
+      //     right: 0;
+      //     @extend %gradient-color;
+      //     font-size: clamp(6rem, 14vw, 12rem);
+      //     font-weight: $font-bold;
+      //     z-index: -1;
+      //     @media screen and (max-width: 575px) {
+      //       left: 0;
+      //     }
+      //   }
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $white;
+      font-weight: $font-medium;
+      margin: 5rem 0 3rem;
+    }
+
+    p {
+      color: $white-clear;
+      font-size: 1.6rem;
+      line-height: 3.3rem;
+      margin-bottom: 4rem;
+    }
+  }
+}

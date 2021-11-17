@@ -1,0 +1,48 @@
+/* Section Specs */
+.specs {
+  &__container {
+    position: relative;
+    @extend %flex-center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    @media screen and (max-width: 515px) {
+      justify-content: inherit;
+    }
+  }
+
+  &__data {
+    margin: 2rem 0;
+
+    i {
+      color: $white;
+      font-size: 2rem;
+    }
+    h3 {
+      color: $white;
+      font-size: 1.6rem;
+    }
+    p {
+      color: $white-clear;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__data:nth-child(1),
+  &__data:nth-child(4) {
+    margin-left: 3rem;
+  }
+
+  &__img {
+    img {
+      width: 30rem;
+      @media screen and (max-width: 400px) {
+        @include position-center($left: 17rem);
+        width: 25rem;
+        z-index: -999;
+      }
+      @media screen and (max-width: 15px) {
+        left: 20rem;
+      }
+    }
+  }
+}

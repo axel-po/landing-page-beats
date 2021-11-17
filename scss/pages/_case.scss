@@ -1,0 +1,48 @@
+/* Section Case */
+.case {
+  h2 {
+    @media screen and (max-width: 600px) {
+      margin-bottom: 7rem;
+    }
+  }
+  &__content {
+    position: relative;
+    @extend %flex-center;
+    justify-content: space-evenly;
+    @media screen and (max-width: 665px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    img {
+      width: 30rem;
+      z-index: -9;
+      @media screen and (max-width: 665px) {
+        width: 25rem;
+      }
+      @media screen and (max-width: 560px) {
+        @include position-center($left: 2rem);
+      }
+      @media screen and (max-width: 451px) {
+        left: -1rem;
+      }
+      @media screen and (max-width: 374px) {
+        left: -2rem;
+      }
+    }
+  }
+
+  &__data {
+    width: 25rem;
+    @media screen and (max-width: 401px) {
+      width: 17rem;
+    }
+    p {
+      color: $white-clear;
+      font-size: clamp(1.5rem, 3vw, 1.6rem);
+      line-height: 3.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

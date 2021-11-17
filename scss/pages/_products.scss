@@ -1,0 +1,52 @@
+/* Section Products */
+.products {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 16.3rem);
+    gap: 9rem 5rem;
+    justify-content: center;
+    margin: 13rem auto;
+    @media screen and (min-width: 905px) {
+      grid-template-columns: repeat(3, 16.3rem);
+    }
+  }
+
+  &__card {
+    position: relative;
+    background: $black-clear--2;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    img {
+      @include position-center(9%);
+      width: 9.5rem;
+    }
+
+    h5,
+    span {
+      font-size: 1.4rem;
+    }
+
+    h5 {
+      margin-top: 9rem;
+      color: $white;
+    }
+
+    span {
+      color: $white-clear;
+      font-weight: $font-semi-bold;
+    }
+
+    a {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
+}

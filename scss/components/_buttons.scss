@@ -1,0 +1,35 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  background: $black;
+  color: $white;
+  font-size: clamp(1.5rem, 3vw, 1.6rem);
+  padding: 1.5rem 2rem;
+  border-radius: 0.9rem;
+  transition: background 0.2s ease;
+  cursor: pointer;
+
+  &--small {
+    padding: 1rem;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  &__content {
+    margin: 0 2rem 0 1rem;
+  }
+
+  &__price {
+    font-weight: $font-semi-bold;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    background-color: $black-clear;
+    cursor: pointer;
+  }
+}

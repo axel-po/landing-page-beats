@@ -1,0 +1,41 @@
+/* Component discount */
+.discount {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $black-clear--2;
+    border-radius: 1rem;
+    padding: 5rem 0;
+    margin-top: 2.5rem;
+    // @media screen and (max-width: 888px) {
+    //   grid-template-columns: 1fr;
+    // }
+  }
+
+  &__data {
+    justify-self: center;
+    align-self: center;
+    width: 25rem;
+    h4 {
+      color: $white;
+      font-weight: $font-semi-bold;
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $white-clear;
+      margin: 2rem 0 3rem;
+    }
+  }
+
+  &__image {
+    justify-self: center;
+    img {
+      width: 35rem;
+      @media screen and (max-width: 888px) {
+        width: 25rem;
+      }
+    }
+  }
+}
